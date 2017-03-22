@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Questionnaire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+	<link rel="stylesheet" href="build/style.min.css">
+</head>
+<body>
+
+	<div class="container top_nav" id="top_nav">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<div class="row">
+					<div class="col-xs-12 ">
+						<nav aria-label="Page navigation" class="text-center">
+							<ul class="pagination ">								
+								<li  class="numeros"><a href="#" id="page_1">1</a></li>
+								<li class="numeros btn-is-disabled"><a href="#" id="page_2" >2</a></li>
+								<li class="numeros btn-is-disabled"><a href="#" id="page_3" >3</a></li>
+								<li class="numeros btn-is-disabled" id="page_4"><a href="#"  >4</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+ 
+	<section class="forms " id="forms">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+					
+					<div class="row content "  id="form_1">
+						<div class="col-xs-8 col-sm-offset-2 col-xs-offset-2">
+							<p class="text-center form_title">1.Введите имя и e-mail</p>
+							<form data-toggle="validator" role="form" id="form_1_valid">
+								<div class="form-group has-feedback">    						
+	    							<input type="text" class="form-control" id="form_1__name" placeholder="Имя"  data-minlength="2" maxlength="50"  data-error="Имя должно иметь больше одной буквы"  required>
+	    							<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+	    							<div class="help-block with-errors"></div>
+	  							</div>
+	  							<div class="form-group has-feedback">   
+	    							<input type="email" class="form-control" id="form_1__email" placeholder="E-mail"  data-error="Адрес должен иметь символ @" required>
+	    							<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+	    							<div class="help-block with-errors"></div>
+	  							</div>
+	  							
+  							</form>
+						</div>
+					</div>
+
+					<div class="row content" >
+						<div class="col-xs-8 col-sm-offset-2 col-xs-offset-2">
+							<p class="text-center form_title">2.Выберите страну и город</p>
+							<form  id="form_2_valid">
+								<div class="form-group ">  						
+	 								<select class="form-control" id="form_2__countries" >
+								    	<option>Страна</option>					
+	  								</select>	  								
+								</div>
+								<div class="form-group ">  						
+	 								<select class="form-control" id="form_2__cities" >
+								    	<option>Город</option>					
+	  			 					</select>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+
+					<div class="row content" >
+					<p class="text-center">3.Отметьте социальные сети</p>
+						<div class="col-xs-10 col-sm-4  col-xs-offset-2 col-sm-offset-2 ">
+						<form id="form_3_check">
+							<div class="checkbox">
+      							<label><input type="checkbox" value="fb">Facebook</label>
+    						</div>
+   							<div class="checkbox">
+      							<label><input type="checkbox" value="vk">Вконтакте</label>
+    						</div>
+    						<div class="checkbox">
+      							<label><input type="checkbox" value="tw">Twitter</label>
+    						</div>
+    						<div class="checkbox">
+      							<label><input type="checkbox" value="cm">Однокласники</label>
+    						</div>
+    					</form>
+						</div>
+						<div class="col-xs-10 col-sm-5 col-xs-offset-1">
+						 	<form id="form_3_valid" data-toggle="validator" role="form">
+		 						<div class="form-group">  						
+	  								<input type="text" class="form-control fb_add social" id="fb_add" placeholder="Ваша страница в Facebook" data-minlength="2">
+								</div>
+								<div class="form-group">  						
+	  								<input type="text" class="form-control vk_add social" id="vk_add" placeholder="Ваша страница в Вконтакте" data-minlength="2">
+								</div>
+								<div class="form-group">  						
+	  								<input type="text" class="form-control tw_add social" id="tw_add" placeholder="Ваша страница в  Twitter" data-minlength="2">
+								</div>
+								<div class="form-group">  						
+	  								<input type="text" class="form-control cm_add social" id="cm_add" placeholder="Ваша страница в Однокласники" data-minlength="2">
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="row content">
+						<div class="col-xs-12 ">
+							<p class="text-center form_title">4.Выберите любимого котика</p>
+							<div class="row ">
+								
+								<div class=" col-xs-3 ">
+								    <div class="thumbnail">
+								        <a href="#" id="cat1" >
+								        	<img src="img/cat1.jpg" alt="cat1" class="animals_choice">
+								        </a>
+								    </div>								      
+								</div>
+								<div class="col-xs-3 ">
+								    <div class="thumbnail">
+								        <a href="#" id="cat2" >
+								          <img src="img/cat2.jpg" alt="cat2" class="animals_choice">
+								        </a>
+								    </div> 								      
+								</div>
+								<div class=" col-xs-3 col-sm-3">
+								    <div class="thumbnail">
+								        <a href="#" id="cat3" >
+								          <img src="img/cat3.jpg" alt="cat3" class="animals_choice" >
+								        </a>
+									</div>								      
+								</div>
+								<div class=" col-xs-3 ">
+								    <div class="thumbnail">
+								        <a href="#" id="dog" >
+								          <img src="img/dog4.jpg" alt="dog" class="animals_choice">
+								        </a>
+								    </div>								      
+								</div>
+
+							</div>
+							<div class="err_msg">Вы выбрали собачку, а надо котика</div>
+
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+
+			
+
+		</div>
+
+		
+	</section>
+
+	<section id="total_info" class="total_info">
+		<div class="container">
+			<div class="row " >
+				<div class="col-xs-6 col-xs-offset-3 card_info">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 text-center card_info_items">
+							<h2 class="total_info_name"></h2>
+							<p class="total_info_email"></p>
+							<p class="total_info_address"></p>
+							<p class="total_info_fb"></p>
+							<p class="total_info_vk"></p>
+							<p class="total_info_tw"></p>
+							<p class="total_info_cm"></p>
+						</div>
+						<div class="col-xs-12 col-sm-6 ">
+							<div class="thumbnail total_info_image">								
+								<img src="" alt="cat1" id="total_info_image_item">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-xs-12 text-center total_info_btn">
+					<button type="button" class="btn btn-warning" id="try_again">Пройти заново </button>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+
+	<div class="container bottom_nav" id="bottom_nav">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<div class="row">
+					<div class="col-xs-12">
+						<nav aria-label="Page navigation" class="text-center">
+							<ul class="pagination ">
+								<li class="pag_prev">
+									<a href="#" aria-label="Previous" class="pagination__link " id="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Предыдущий</a>
+								</li>
+								
+								<li class="pag_next btn-is-disabled">
+						 			<a href="#" class="pagination__link " id="next">Следующий<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+								</li>	
+								<li class="finish_btn">
+									<a href="#" class="pagination__link_finish btn-is-disabled  " id="finish"  >Завершить</a>
+								</li>						 	
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>   
+	<script src="build/script.min.js"></script>
+	
+</body>
+</html>
